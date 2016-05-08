@@ -1,5 +1,8 @@
 // Terminal Settings
-// put this code inside ~/.bash_profile
+// incase the ~/.bash_profile is not in the home folder.
+// do 'touch ~/.bash_profile'
+// open ~/.bash_profile with atom or other text editor
+// copy/paste this code inside ~/.bash_profile
 function parse_git_branch {
  git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
 }
